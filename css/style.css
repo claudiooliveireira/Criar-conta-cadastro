@@ -1,0 +1,232 @@
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+
+html,body{
+    height: auto;
+    min-height: 100vh;
+} 
+
+html {
+    background: linear-gradient(180deg,#a0aaff 0%, #f5e484 100%  ); /* 180deg = top to bottom*/
+}
+
+
+input:focus {
+    outline: none;
+}
+
+/* Container geral */
+#register-container {
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: rgba(50,50,93,0.25) 0px 13px 27px -5px, 
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* banner do h1 */
+#register-banner {
+    background: url('../img/bg-form.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#banner-layer {
+    background-color: #733e3498;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+/* text dentro do banner h1 */
+#register-banner h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    word-spacing: 50rem;
+}
+
+#register-form {
+    background-color: #fdfffd;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#register-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#register-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #aaa;
+    font-size: 0.8rem;
+
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 0.6rem 0;
+}
+
+#open-generate-password {
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#open-generate-password:hover {
+    color: #0099ff;
+}
+
+#register-form #generated-password {
+    border: 1px solid #0099ff;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .4rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: none; /* inicialmente escondido */
+}
+
+#register-form #generated-password p {
+    color: #81d340;
+    margin-bottom: .5rem;
+}
+
+#register-form input[type="submit"],
+#generate-options button,
+#copy-password {
+    background-color: #81d340;
+    color: #fff;
+    opacity: .8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end; /* alinha o botão a direita */
+    transition: .4s;
+}
+
+#register-form input[type="submit"]:hover {
+    opacity: 1;
+}  
+
+
+/* Segunda versão campo de edição de gerar senha */
+#generate-options {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+
+}
+/* campo de input, dentro do campo de edição */
+#generate-options .form-control {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+/* campo de label, dentro do campo de ediçãp */
+#generate-options label {
+    font-size: 0.8rem
+}
+/* campo de input, dentro do campo de edição */
+#generate-options input[type="text"] {
+    max-width: 30px;
+    text-align: center;
+    border: 1px solid 
+    
+}
+/* botão gerar senha dentro do campo de edição */
+#generate-options button {
+    background-color: #0097ff;
+    display: block;
+    margin: 0 auto;
+}
+/* botão copiar senha */
+#copy-password {
+    margin: 1rem 0;
+    background-color: transparent;
+    border: 2px solid #81d340;
+    color: #81d340;
+    padding: 0.5rem 1rem;
+}
+/* classe para esconder a edição de gerar senha, ( inicialmente ) */ 
+.hide {
+    display: none;
+}
+
+/* Celular */
+@media (max-width:768px) {
+    html,body {
+        width: 100vw;
+        height: 90vh;
+        
+    }
+
+    html {
+    background: linear-gradient(180deg,#a0aaff 0%, #f5e484 100%  ); /* 180deg = top to bottom*/
+}
+    /* Container geral */
+    #register-container{
+    width: 500px;
+    min-height: 100vh;
+
+    }
+
+    /* text dentro do banner h1 */
+    #register-banner h1 {
+    font-size: 2rem;
+ 
+    }
+}
+
+/* Tablet */
+@media screen and (min-width:768px) and (max-width:1280px) {
+     /* text dentro do banner h1 */
+    #register-banner h1 {
+    font-size: 3rem;
+ 
+    }
+
+
+}
+
+
+
+
+
+
+
